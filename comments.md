@@ -15,5 +15,8 @@ git add .
 git commit -m 'third'
 gst
 
-python3 ticTacToe.py
+/Library/Frameworks/Python.framework/Versions/3.8/bin/python3.8 -m pip install --upgrade pip
+pip install numpy
+
+python3 numpyRecap.py
 and so on...
