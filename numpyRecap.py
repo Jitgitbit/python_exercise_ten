@@ -91,3 +91,39 @@ x = np.random.randint(1,100)
 print(x)
 print("----------------------------------")
 print()
+print("Indexing and slicing")
+print("==================================")
+x = np.arange(0,21)
+print(x)
+print('- - - - - - - - - - - - - - - - -')
+print('getting the index value: ')
+y = x[8]
+print(y)
+z = x[-1]
+print(z)
+print('- - - - - - - - - - - - - - - - -')
+print('slicing: ')
+y = x[:10]
+print(y)
+z = x[10:]
+print(z)
+a = x[2:5]
+print(a)
+b = x[1:10]
+print(b)
+c = x[-10:-1]
+print(c)
+print('- - - - - - - - - - - - - - - - -')
+print('slicing and changing the values: ')
+y = x[5:15] = 40
+print(y)
+print(x)
+print('- - - - - - - - - - - - - - - - -')
+print('slicing and changing the values, but without mutation! ')
+x = np.arange(0,21)
+print(x)
+y = x.copy()
+print(y)
+z = y[5:15] = 40
+print(z)
+print(y)
