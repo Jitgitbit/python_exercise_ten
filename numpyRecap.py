@@ -127,3 +127,30 @@ print(y)
 z = y[5:15] = 40
 print(z)
 print(y)
+print("----------------------------------")
+print()
+print("Slicing 2D Matrix and conditional selection")
+print("==================================")
+x = np.arange(25).reshape(5,5)
+print(x)
+print('- - - - - - - - - - - - - - - - -')
+print('Slicing in 2D matrix:')
+print('x[i][j]')
+y = x[2][2]
+print(y)
+z = x[4][2]
+print(z)
+a = x[2,2]
+print(a)
+b = x[4,2]
+print(b)
+c = x[0:2,2:]
+print(c)
+d = x[1:4,1:4]
+print(d)
+print('- - - - - - - - - - - - - - - - -')
+print('Conditional selection in 2D matrix:')
+x = np.arange(1,21)
+print(x)
+y = x[x > 12]
+print(y)
